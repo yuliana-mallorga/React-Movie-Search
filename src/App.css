@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    
+}
+
+.page h1 {
+    text-align: center;
+}
+
+main{
+  width: 100%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    min-height: 300px;
+    width: auto;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.movies {
+    list-style: none;
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   
+    width: 100%;
+    gap: 30px;
+  }
+  
+  .movie {
+    text-align: center;
+  }
+  
+  .movie h3, .movie p {
+    margin: 0;
+  }
+  
+  .movie img {
+    border-radius: 8px;
+    margin-top: 16px;
+  }
